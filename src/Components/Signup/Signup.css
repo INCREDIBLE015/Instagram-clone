@@ -1,0 +1,14 @@
+.app__headerImage{
+    object-fit: contain;
+  }
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .inputfield{
+    margin-top:15px!important;
+    margin-bottom:15px!important;
+  }

@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+}
+.app{
+  margin-top: 70px;
+  background-color: #fafafa;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header{
+  position:fixed;
+  top:0;
+  z-index: 1;
+  object-fit: contain;
+  padding: 10px;
+  background-color:white;
+  border-bottom: 1px solid lightgray;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  object-fit: contain;
+  width: 100%;
+}
+
+.app__headerImage{
+  object-fit: contain;
+}
+
+.app__header__signedin__state{
+   display: flex;
+   align-items: center;
+   margin-right: 25px;
+}
+
+.app__header__signedout__state{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__uploadimage{
+  height: 30px; 
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__uploadimage__button{
+  float: right; 
+  margin-right: 5px;
+  
+}
+.app__content{
+  margin: 20px 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.app__content__posts{
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .app__content{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .instagram-media{
+    max-width: 100%!important;
+    min-width: 100%!important;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .makeStyles-paper-1{
+      width: 70%!important;
   }
 }
